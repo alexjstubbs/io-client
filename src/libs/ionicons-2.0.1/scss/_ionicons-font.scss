@@ -1,6 +1,8 @@
 // Ionicons Font Path
 // --------------------------
 
+@import "_ionicons-variables.scss";
+
 @font-face {
  font-family: $ionicons-font-family;
  src:url("#{$ionicons-font-path}/ionicons.eot?v=#{$ionicons-version}");

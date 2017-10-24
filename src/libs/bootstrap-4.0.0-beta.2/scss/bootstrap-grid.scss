@@ -20,16 +20,16 @@ html {
   box-sizing: inherit;
 }
 
-@import "functions";
-@import "variables";
+@import "_functions.scss";
+@import "_variables.scss";
 
 //
 // Grid mixins
 //
 
-@import "mixins/breakpoints";
-@import "mixins/grid-framework";
-@import "mixins/grid";
+@import "mixins/_breakpoints.scss";
+@import "mixins/_grid-framework.scss";
+@import "mixins/_grid.scss";
 
-@import "grid";
-@import "utilities/flex";
+@import "_grid.scss";
+@import "utilities/_flex.scss";
