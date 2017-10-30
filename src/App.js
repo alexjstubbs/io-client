@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import Avatar from './components/Avatar';
+import FileList from './components/FileList';
+import ConsoleList from './components/ConsoleList';
 import './assets/themes/neon_moon.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App twelve columns">
+      <div className="App container">
+        <div className="twelve columns">
+
         <header className="App-header">
 
           <Avatar></Avatar>
@@ -14,6 +18,21 @@ class App extends Component {
           <hr className="twelve columns" />
 
         </header>
+
+
+        <div className="content">
+
+          <ConsoleList></ConsoleList>
+
+          <br />
+
+          <div className="u-cf"></div>
+
+          <FileList></FileList>
+
+        </div>
+
+        </div>
       </div>
     );
   }

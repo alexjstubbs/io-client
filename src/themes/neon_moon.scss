@@ -34,6 +34,10 @@ $red: #C50F0F;
     margin: 0 !important;
 }
 
+.no-bullets {
+    list-style-type: none !important;
+}
+
 .icon-justified {
     position: relative;
     top: 1.3px;
@@ -73,3 +77,35 @@ body {
 hr {
     border-color: darken($text-color, 55%);
 }
+
+/*
+ * Console List
+ */
+
+.console-list li {
+    font-size: 2em;
+    display: inline; 
+    padding: 15px;
+}
+
+.console-list li:not(.active) {
+    opacity: 0.5;
+}
+
+.console-list li .active {
+    font-size: 2.5em;
+    opacity: 1;
+}
+
+
+/*
+ * File List
+ */
+
+ .file-list {
+     padding: 0px;
+     margin: 20px 0 0 0;
+     height: 100vh;
+     overflow-y: scroll;
+     background: darken($background-color, 40%);
+ }
