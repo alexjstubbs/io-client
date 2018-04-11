@@ -1,12 +1,14 @@
 import React from 'react';
+import OnlineIndicator from './OnlineIndicator';
 
 const Components = {
-  Avatar: function DatePicker(props) {
+  Avatar: function Avatar(props) {
     return (
      
-        <div className="two columns">
+        <div className="five columns u-pull-right">
 
-          <div className="avatar">
+          <div className="avatar container">
+            <OnlineIndicator></OnlineIndicator>
           </div>
 
         </div>

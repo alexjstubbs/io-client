@@ -1,0 +1,234 @@
+/*
+ * Theme: Neon Moon
+ * Author: Alex Stubbs
+ */
+
+/*
+ * Variables
+ */
+
+$font-stack: 'roboto-thin', Helvetica, sans-serif;
+$background-color: #000;
+$black: #000;
+$text-color: #CCCCCC;
+$red: #C50F0F;
+$blue: #1f80ed;
+$purple: #9933CC;
+$green: #1EFB58;
+
+/*
+* Imports/Assets
+*/
+
+@import url('../libs/skeleton.css');
+@import url('../libs/ionicons-2.0.1/scss/ionicons.css');
+
+@font-face {
+    font-family: 'roboto-thin';
+    src: url('../fonts/Roboto/Roboto-Thin.ttf');
+}
+
+/*
+ * Helpers
+ */
+
+ .nopadding-nomargin {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.no-bullets {
+    list-style-type: none !important;
+}
+
+.icon-justified {
+    position: relative;
+    top: 1.3px;
+    left: 3px;
+}
+
+.red {
+    color: $red;
+}
+
+.h-20-vh {
+    height: 20vh;
+}
+
+.h-30-vh {
+    height: 30vh;
+}
+
+.h-40-vh {
+    height: 40vh;
+}
+
+.h-50-vh {
+    height: 50vh;
+}
+
+.h-60-vh {
+    height: 60vh;
+}
+
+.img-responsive {
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+ * Overrides
+ */
+
+:focus {
+	outline: 0;
+}
+
+.mouse {
+    cursor: default !important;
+}
+
+.nomouse {
+    cursor: none !important;
+}
+
+/*
+ * Global/Window/Body
+ */
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $font-stack;
+}
+
+.container {
+    width: 100vw;
+}
+
+.App {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 
+ * Avatar
+ */
+
+ .avatar {
+    position: relative;
+    background-color: #333;
+    height: 75px;
+    width: 75px;
+}
+
+hr {
+    border-color: darken($text-color, 55%);
+}
+
+/*
+ * Console List
+ */
+
+ul.console-list {
+    position: relative;
+    top: 25px;
+    
+    li {
+        font-size: 2em;
+        display: inline; 
+        padding: 15px;
+    }
+    
+    li:not(.active) {
+        opacity: 0.5;
+    }
+    
+    li .active {
+        font-size: 2.5em;
+        opacity: 1;
+    }
+}
+
+/*
+ * File List
+ */
+
+ .file-list {
+     padding: 0px;
+     margin: 20px 0 0 0;
+     height: 100vh;
+     overflow-y: scroll;
+     background: darken($background-color, 40%);
+ }
+
+ /* 
+  * Navigation Buttons
+  */
+
+.navigation-button {
+    background-color: lighten($background-color, 10%); 
+    padding: 20px;
+    margin: 15px;
+}
+
+/*
+ * Profile/Avatar/Indicators
+ */
+
+ .onlineIcon {
+     font-size: 3rem;
+     position: absolute;
+     top: -20px;
+     right: -10px;
+ }
+
+/*
+ * Animation 
+ */
+
+
+.selectedNav {
+    -moz-animation: outlineAnimation 0.9s infinite;
+    -webkit-animation: outlineAnimation 0.9s infinite;
+	animation: outlineAnimation 0.9s infinite;
+}
+
+.selectedNav.muted {
+    -moz-animation: none;
+    -webkit-animation:none;
+    animation: none;
+    outline:none;
+}
+
+@keyframes outlineAnimation {
+  0%   { outline:$blue ridge 1px; }
+  25%  { outline:$purple ridge 1px;}
+  50%  { outline:$blue ridge 1px; }
+  75%  { outline:$purple ridge 1px;}
+  100% { outline:$blue ridge 1px;  }
+}
+
+@-webkit-keyframes outlineAnimation {
+    0%   { outline:$blue ridge 1px; }
+    25%  { outline:$purple ridge 1px;}
+    50%  { outline:$blue ridge 1px; }
+    75%  { outline:$purple ridge 1px;}
+    100% { outline:$blue ridge 1px;  }
+}
+
+@-moz-keyframes outlineAnimation {
+    0%   { outline:$blue ridge 1px; }
+    25%  { outline:$purple ridge 1px;}
+    50%  { outline:$blue ridge 1px; }
+    75%  { outline:$purple ridge 1px;}
+    100% { outline:$blue ridge 1px;  }
+}
+
+/* Color Utilities */
+.bg-green {
+    background-color: $green;
+}
+.color-green {
+    color: $green;
+}

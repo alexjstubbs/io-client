@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Avatar from './components/Avatar';
-import FileList from './components/FileList';
-import ConsoleList from './components/ConsoleList';
+import NavBlockExplorer from './components/NavBlockExplorer';
+import NavBlockHistory from './components/NavBlockHistory';
+import NavBlockAddGames from './components/NavBlockAddGames';
+import MenuList from './components/MenuList';
 import './assets/themes/neon_moon.css';
 
 class App extends Component {
@@ -10,27 +12,34 @@ class App extends Component {
       <div className="App container">
         <div className="twelve columns">
 
-        <header className="App-header">
+          <header className="App-header">
 
-          <Avatar></Avatar>
-          <h4 className="nopadding-nomargin">Alex</h4>
-          Offline <i class="ion-android-cancel icon-justified red"></i>
-          <hr className="twelve columns" />
+            <div className="ten columns">
+              <MenuList></MenuList>
+            </div>
 
-        </header>
+            <div className="two columns">
+              <Avatar></Avatar>
+            </div>
 
+          </header>
 
-        <div className="content">
-
-          <ConsoleList></ConsoleList>
-
-          <br />
-
-          <div className="u-cf"></div>
-
-          <FileList></FileList>
-
+        <div className="twelve columns nopadding-nomargin">
+         <br />
         </div>
+
+          <div className="content">
+
+            <div className="six columns">
+              <NavBlockExplorer></NavBlockExplorer>
+              <NavBlockHistory></NavBlockHistory>
+            </div>
+
+            <div className="six columns">
+              <NavBlockAddGames></NavBlockAddGames>
+            </div>
+
+          </div>
 
         </div>
       </div>

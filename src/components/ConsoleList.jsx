@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Components = {
-  ConsoleList: function DatePicker(props) {
+  ConsoleList: function ConsoleList(props) {
     return (
      
           <div className="console-list twelve columns">

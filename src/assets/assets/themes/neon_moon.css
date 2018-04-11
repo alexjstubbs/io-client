@@ -47,10 +47,6 @@
 .h-60-vh {
   height: 60vh; }
 
-.img-responsive {
-  width: 100%;
-  height: 100%; }
-
 /* 
  * Overrides
  */
@@ -82,10 +78,9 @@ body {
  * Avatar
  */
 .avatar {
-  position: relative;
   background-color: #333;
-  height: 75px;
-  width: 75px; }
+  width: 75px;
+  height: 75px; }
 
 hr {
   border-color: #404040; }
@@ -93,18 +88,17 @@ hr {
 /*
  * Console List
  */
-ul.console-list {
-  position: relative;
-  top: 25px; }
-  ul.console-list li {
-    font-size: 2em;
-    display: inline;
-    padding: 15px; }
-  ul.console-list li:not(.active) {
-    opacity: 0.5; }
-  ul.console-list li .active {
-    font-size: 2.5em;
-    opacity: 1; }
+.console-list li {
+  font-size: 2em;
+  display: inline;
+  padding: 15px; }
+
+.console-list li:not(.active) {
+  opacity: 0.5; }
+
+.console-list li .active {
+  font-size: 2.5em;
+  opacity: 1; }
 
 /*
  * File List
@@ -123,15 +117,6 @@ ul.console-list {
   background-color: #1a1a1a;
   padding: 20px;
   margin: 15px; }
-
-/*
- * Profile/Avatar/Indicators
- */
-.onlineIcon {
-  font-size: 3rem;
-  position: absolute;
-  top: -20px;
-  right: -10px; }
 
 /*
  * Animation 
@@ -182,10 +167,3 @@ ul.console-list {
     outline: #9933CC ridge 1px; }
   100% {
     outline: #1f80ed ridge 1px; } }
-
-/* Color Utilities */
-.bg-green {
-  background-color: #1EFB58; }
-
-.color-green {
-  color: #1EFB58; }
