@@ -132,12 +132,14 @@ ul.console-list {
   * Navigation Buttons
   */
 .navigation-button {
-  background-color: #1a1a1a;
+  background-color: #141414;
   padding: 20px;
   margin: 15px; }
 
 .navigation-button.shapes {
-  background: #1a1a1a url("../images/shapes_01.png") bottom right no-repeat; }
+  background: #141414 url("../images/shapes_01.png") bottom right no-repeat;
+  background-position-y: 130%;
+  background-position-x: 110%; }
 
 /*
  * Profile/Avatar/Indicators

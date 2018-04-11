@@ -183,13 +183,15 @@ ul.console-list {
   */
 
 .navigation-button {
-    background-color: lighten($background-color, 10%); 
+    background-color: lighten($background-color, 8%); 
     padding: 20px;
     margin: 15px;
 }
 
 .navigation-button.shapes {
-    background: lighten($background-color, 10%) url('../images/shapes_01.png') bottom right no-repeat;
+    background: lighten($background-color, 8%) url('../images/shapes_01.png') bottom right no-repeat;
+    background-position-y: 130%;
+    background-position-x: 110%;
 }
 
 /*
