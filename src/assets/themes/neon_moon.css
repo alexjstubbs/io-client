@@ -24,6 +24,9 @@
 .no-bullets {
   list-style-type: none !important; }
 
+.mute {
+  opacity: 0.5; }
+
 .icon-justified {
   position: relative;
   top: 1.3px;
@@ -32,8 +35,17 @@
 .red {
   color: #C50F0F; }
 
+.h-10-vh {
+  height: 10vh; }
+
+.h-15-vh {
+  height: 15vh; }
+
 .h-20-vh {
   height: 20vh; }
+
+.h-25-vh {
+  height: 25vh; }
 
 .h-30-vh {
   height: 30vh; }
@@ -124,6 +136,9 @@ ul.console-list {
   padding: 20px;
   margin: 15px; }
 
+.navigation-button.shapes {
+  background: #1a1a1a url("../images/shapes_01.png") bottom right no-repeat; }
+
 /*
  * Profile/Avatar/Indicators
  */
@@ -151,11 +166,11 @@ ul.console-list {
   0% {
     outline: #1f80ed ridge 1px; }
   25% {
-    outline: #9933CC ridge 1px; }
+    outline: #BA00FF ridge 1px; }
   50% {
     outline: #1f80ed ridge 1px; }
   75% {
-    outline: #9933CC ridge 1px; }
+    outline: #BA00FF ridge 1px; }
   100% {
     outline: #1f80ed ridge 1px; } }
 
@@ -163,11 +178,11 @@ ul.console-list {
   0% {
     outline: #1f80ed ridge 1px; }
   25% {
-    outline: #9933CC ridge 1px; }
+    outline: #BA00FF ridge 1px; }
   50% {
     outline: #1f80ed ridge 1px; }
   75% {
-    outline: #9933CC ridge 1px; }
+    outline: #BA00FF ridge 1px; }
   100% {
     outline: #1f80ed ridge 1px; } }
 
@@ -175,11 +190,11 @@ ul.console-list {
   0% {
     outline: #1f80ed ridge 1px; }
   25% {
-    outline: #9933CC ridge 1px; }
+    outline: #BA00FF ridge 1px; }
   50% {
     outline: #1f80ed ridge 1px; }
   75% {
-    outline: #9933CC ridge 1px; }
+    outline: #BA00FF ridge 1px; }
   100% {
     outline: #1f80ed ridge 1px; } }
 

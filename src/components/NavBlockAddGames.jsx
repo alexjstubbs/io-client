@@ -4,8 +4,9 @@ const Components = {
   NavBlockExplorer: function NavBlockExplorer(props) {
     return (
      
-          <div className="navigation-button h-40-vh twelve columns">
-              Add Games
+          <div className="navigation-button shapes h-30-vh twelve columns">
+              <h4 className="nopadding-nomargin">Add New Games</h4>
+              <span className="mute nopadding-nomargin">Add games to your library</span>
           </div>
   
     );

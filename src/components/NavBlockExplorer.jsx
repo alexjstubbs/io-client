@@ -5,7 +5,8 @@ const Components = {
     return (
      
           <div className="selectedNav navigation-button h-40-vh twelve columns">
-              Explorer
+              <h4 className="nopadding-nomargin">Game Explorer</h4>
+              <span className="mute nopadding-nomargin">Browse your game collection</span>
           </div>
   
     );

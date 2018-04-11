@@ -3,6 +3,8 @@ import Avatar from './components/Avatar';
 import NavBlockExplorer from './components/NavBlockExplorer';
 import NavBlockHistory from './components/NavBlockHistory';
 import NavBlockAddGames from './components/NavBlockAddGames';
+import NavBlockAchievements from './components/NavBlockAchievements';
+import NavBlockUpdates from './components/NavBlockUpdates';
 import MenuList from './components/MenuList';
 import './assets/themes/neon_moon.css';
 
@@ -37,6 +39,8 @@ class App extends Component {
 
             <div className="six columns">
               <NavBlockAddGames></NavBlockAddGames>
+              <NavBlockAchievements></NavBlockAchievements>
+              <NavBlockUpdates></NavBlockUpdates>
             </div>
 
           </div>

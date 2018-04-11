@@ -13,7 +13,7 @@ $black: #000;
 $text-color: #CCCCCC;
 $red: #C50F0F;
 $blue: #1f80ed;
-$purple: #9933CC;
+$purple: #BA00FF;
 $green: #1EFB58;
 
 /*
@@ -41,6 +41,10 @@ $green: #1EFB58;
     list-style-type: none !important;
 }
 
+.mute {
+    opacity: 0.5;
+}
+
 .icon-justified {
     position: relative;
     top: 1.3px;
@@ -51,8 +55,20 @@ $green: #1EFB58;
     color: $red;
 }
 
+.h-10-vh {
+    height: 10vh;
+}
+
+.h-15-vh {
+    height: 15vh;
+}
+
 .h-20-vh {
     height: 20vh;
+}
+
+.h-25-vh {
+    height: 25vh;
 }
 
 .h-30-vh {
@@ -172,6 +188,10 @@ ul.console-list {
     margin: 15px;
 }
 
+.navigation-button.shapes {
+    background: lighten($background-color, 10%) url('../images/shapes_01.png') bottom right no-repeat;
+}
+
 /*
  * Profile/Avatar/Indicators
  */
@@ -232,3 +252,6 @@ ul.console-list {
 .color-green {
     color: $green;
 }
+
+
+        
