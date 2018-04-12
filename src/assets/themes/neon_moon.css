@@ -169,12 +169,12 @@ ul.console-list {
 /*
  * Animation 
  */
-.selectedNav {
+.nav-selected {
   -moz-animation: outlineAnimation 0.9s infinite;
   -webkit-animation: outlineAnimation 0.9s infinite;
   animation: outlineAnimation 0.9s infinite; }
 
-.selectedNav.muted {
+.nav-selected.muted {
   -moz-animation: none;
   -webkit-animation: none;
   animation: none;

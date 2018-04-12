@@ -4,7 +4,7 @@ const Components = {
   NavBlockUpdates: function NavBlockUpdates(props) {
     return (
      
-          <div className="navigation-button h-16-3-vh twelve columns">
+          <div data-nav-column="1" data-nav-row="2" className="nav-item navigation-button h-16-3-vh twelve columns">
               <h4 className="nopadding-nomargin">Updates</h4>
               <span className="mute nopadding-nomargin">Get the latest version</span>
           </div>

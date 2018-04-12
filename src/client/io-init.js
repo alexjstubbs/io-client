@@ -1,7 +1,8 @@
 let navigationBindings = require("./io-keyboard-events");
 
-    /* Bind local Navigation
-    -------------------------------------------------- */
-    navigationBindings
-        .navigationEventListeners
-        .bindEventNavigation();
+/*
+ * Bind Navigation Events
+ */
+navigationBindings
+    .navigationEventListeners
+    .bindEventNavigation();

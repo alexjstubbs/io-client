@@ -3,6 +3,7 @@ import Header from './components/Header';
 import ScreenDashboard from './components/ScreenDashboard';
 import ScreenCommunity from './components/ScreenCommunity';
 import ScreenNext from './components/ScreenNext';
+import navigation from './client/io-keyboard-events.js';
 import './client/io-init.js';
 import './assets/themes/neon_moon.css';
 
@@ -13,6 +14,10 @@ class App extends Component {
     this.state = {first: true};
   }
 
+  componentDidMount() {
+    console.log("moutned")
+    navigation.navigationInit();
+  }
 
   render() {
     const first = this.state.first;
