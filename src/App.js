@@ -3,6 +3,7 @@ import Header from './components/Header';
 import ScreenDashboard from './components/ScreenDashboard';
 import ScreenCommunity from './components/ScreenCommunity';
 import ScreenTools from './components/ScreenTools';
+import ScreenSettings from './components/ScreenSettings';
 import ScreenNext from './components/ScreenNext';
 import ScreenPrev from './components/ScreenPrev';
 import navigation from './client/io-keyboard-events.js';
@@ -21,7 +22,8 @@ class App extends Component {
     this.screens = {
       0: <ScreenDashboard  />,
 	  1: <ScreenCommunity  />,
-      2: <ScreenTools  />
+	  2: <ScreenTools  />,
+	  3: <ScreenSettings />
     }
 
   }
@@ -77,7 +79,7 @@ class App extends Component {
 			{screen}
           </div>
 
-		{this.state.screen  != 2 ?
+		{this.state.screen  != 3 ?
 			<div className="one column nopadding-nomargin">
 				<ScreenNext />
 			</div>
