@@ -15,8 +15,20 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log("moutned")
+
+    var component = this;
+
+    // Init Navigation
     navigation.navigationInit();
+
+  window.addEventListener("screenRender", function(e) {
+    component.setState({
+      first: false
+    });
+
+    console.log(component.state);
+  });
+  
   }
 
   render() {

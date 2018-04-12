@@ -103,6 +103,21 @@ let navigationEvent = {
 
     },
 
+
+     // Prev Nav Item ([) <-
+     prevScreen: function() {
+         console.log("Previous Screen");
+     },
+
+
+     // Prev Nav Item (]) ->
+     nextScreen: function() {
+         console.log("Next Screen");
+
+         var event = new CustomEvent('screenRender', { detail: "YOYO" });
+         window.dispatchEvent(event);
+     },
+
 }
 
 
@@ -122,6 +137,14 @@ let keyMapping = {
     40: {
         name:  "downArrow",
         event: navigationEvent.nextNavItemRow
+    },
+    219: {
+        name:  "left square bracket",
+        event: navigationEvent.prevScreen
+    },
+    221: {
+        name:  "right square bracket",
+        event: navigationEvent.nextScreen
     },
 }
 

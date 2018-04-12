@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import NavBlockExplorer from './NavBlockExplorer';
-import NavBlockHistory from './NavBlockHistory';
-import NavBlockAddGames from './NavBlockAddGames';
-import NavBlockAchievements from './NavBlockAchievements';
-import NavBlockUpdates from './NavBlockUpdates';
+import NavBlockMultiplayer from './NavBlockMultiplayer';
+import NavBlockFriends from './NavBlockFriends';
 
 class ScreenDashboard extends Component {
   render() {
@@ -18,12 +15,11 @@ class ScreenDashboard extends Component {
           <div className="content">
 
             <div className="six columns h-80-vh">
-              <NavBlockHistory />
+              <NavBlockMultiplayer />
             </div>
 
             <div className="six columns h-80-vh">
-              <NavBlockAchievements />
-              <NavBlockUpdates />
+              <NavBlockFriends />
             </div>
 
           </div>
