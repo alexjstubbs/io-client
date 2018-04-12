@@ -10,7 +10,7 @@ class ScreenDashboard extends Component {
 
     return (
 
-        <div>
+        <div data-screen="ScreenDashboard">
             
         <div className="twelve columns nopadding-nomargin">
          <br />

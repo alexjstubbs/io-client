@@ -6,11 +6,7 @@ class ScreenDashboard extends Component {
   render() {
     return (
         
-        <div>
-
-        <div className="twelve columns nopadding-nomargin">
-         <br />
-        </div>
+        <div data-screen="ScreenCommunity" className="twelve columns nopadding-nomargin">
 
           <div className="content">
 

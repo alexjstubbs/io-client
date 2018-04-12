@@ -117,10 +117,18 @@ let navigationEvent = {
          window.dispatchEvent(event);
      },
 
+    // Prev Nav Item (]) ->
+    returnFunction: function() {
+       console.log("Return A Function Here");
+    },
 }
 
 
 let keyMapping = {
+    13: {
+        name:  "Enter",
+        event: navigationEvent.returnFunction
+    },
     37: {
         name:  "leftArrow",
         event: navigationEvent.prevNavItemColumn
@@ -168,6 +176,9 @@ let navigationEventListeners = {
 };
 
 let navigationInit = function() {
+    let navSelection = _.first(document.getElementsByClassName("nav-selected"));
+    if (navSelection) { navSelection.classList.remove("nav-selected"); }
+    
     _.first(document.getElementsByClassName("nav-item")).classList.add("nav-selected");
 }
 
