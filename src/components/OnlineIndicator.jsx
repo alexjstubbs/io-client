@@ -4,8 +4,8 @@ const Components = {
   OnlineIndicator: function OnlineIndicator(props) {
     return (
      
-        <div class="onlineIcon">
-            <i class="icon ion-record color-green"></i>
+        <div className="onlineIcon">
+            <i className="icon ion-record color-green"></i>
         </div>
         
     );

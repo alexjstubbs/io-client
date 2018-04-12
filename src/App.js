@@ -1,51 +1,42 @@
 import React, { Component } from 'react';
-import Avatar from './components/Avatar';
-import NavBlockExplorer from './components/NavBlockExplorer';
-import NavBlockHistory from './components/NavBlockHistory';
-import NavBlockAddGames from './components/NavBlockAddGames';
-import NavBlockAchievements from './components/NavBlockAchievements';
-import NavBlockUpdates from './components/NavBlockUpdates';
-import MenuList from './components/MenuList';
+import Header from './components/Header';
+import ScreenDashboard from './components/ScreenDashboard';
+import ScreenCommunity from './components/ScreenCommunity';
+import ScreenNext from './components/ScreenNext';
+import './client/io-init.js';
 import './assets/themes/neon_moon.css';
 
 class App extends Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = {first: true};
+  }
+
+
   render() {
+    const first = this.state.first;
+
+      const navScreen = first ? (
+        <ScreenDashboard  />
+      ) : (
+        <ScreenCommunity />
+      );
+
     return (
+
       <div className="App container">
-        <div className="twelve columns">
 
-          <header className="App-header">
+          <Header />
 
-            <div className="ten columns">
-              <MenuList></MenuList>
-            </div>
-
-            <div className="two columns">
-              <Avatar></Avatar>
-            </div>
-
-          </header>
-
-        <div className="twelve columns nopadding-nomargin">
-         <br />
-        </div>
-
-          <div className="content">
-
-            <div className="six columns">
-              <NavBlockExplorer></NavBlockExplorer>
-              <NavBlockHistory></NavBlockHistory>
-            </div>
-
-            <div className="six columns">
-              <NavBlockAddGames></NavBlockAddGames>
-              <NavBlockAchievements></NavBlockAchievements>
-              <NavBlockUpdates></NavBlockUpdates>
-            </div>
-
+          <div className="eleven columns nopadding-nomargin">
+            {navScreen}
           </div>
 
-        </div>
+          <div className="one column nopadding-nomargin">
+              <ScreenNext />
+          </div>
+
       </div>
     );
   }

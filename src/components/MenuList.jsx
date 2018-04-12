@@ -6,7 +6,7 @@ const Components = {
      
         <div className="console-list twelve columns">
         <ul className="no-bullets nopadding-nomargin console-list">
-                <li class="active">Dashboard</li>
+                <li className="active">Dashboard</li>
                 <li>Community</li>
                 <li>Tools</li>
                 <li>Settings</li>

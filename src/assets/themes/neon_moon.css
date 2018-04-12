@@ -41,6 +41,9 @@
 .h-15-vh {
   height: 15vh; }
 
+.h-16-3-vh {
+  height: 16.3vh; }
+
 .h-20-vh {
   height: 20vh; }
 
@@ -49,6 +52,9 @@
 
 .h-30-vh {
   height: 30vh; }
+
+.h-35-vh {
+  height: 35vh; }
 
 .h-40-vh {
   height: 40vh; }
@@ -88,7 +94,8 @@ body {
 
 .App {
   margin: 0 auto;
-  padding: 20px; }
+  padding: 20px;
+  overflow: hidden; }
 
 /* 
  * Avatar
@@ -140,6 +147,15 @@ ul.console-list {
   background: #141414 url("../images/shapes_01.png") bottom right no-repeat;
   background-position-y: 130%;
   background-position-x: 110%; }
+
+.navigation-button:last-child {
+  border-bottom: 8px solid #404040; }
+
+.right-screen {
+  position: absolute;
+  right: -90px;
+  top: 120px;
+  opacity: 0.5; }
 
 /*
  * Profile/Avatar/Indicators
@@ -200,7 +216,9 @@ ul.console-list {
   100% {
     outline: #1f80ed ridge 1px; } }
 
-/* Color Utilities */
+/* 
+ * Color Utilities 
+ */
 .bg-green {
   background-color: #1EFB58; }
 

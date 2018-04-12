@@ -22,13 +22,13 @@ class GameExplorer extends Component {
 
         <div className="content">
 
-          <ConsoleList></ConsoleList>
+          <ConsoleList />
 
           <br />
 
           <div className="u-cf"></div>
 
-          <FileList></FileList>
+          <FileList />
 
         </div>
 

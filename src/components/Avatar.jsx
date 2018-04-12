@@ -8,7 +8,7 @@ const Components = {
         <div className="five columns u-pull-right">
 
           <div className="avatar container">
-            <OnlineIndicator></OnlineIndicator>
+            <OnlineIndicator />
           </div>
 
         </div>

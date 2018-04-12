@@ -1,0 +1,36 @@
+import React, { Component } from 'react';
+import NavBlockExplorer from './NavBlockExplorer';
+import NavBlockHistory from './NavBlockHistory';
+import NavBlockAddGames from './NavBlockAddGames';
+import NavBlockAchievements from './NavBlockAchievements';
+import NavBlockUpdates from './NavBlockUpdates';
+
+class ScreenDashboard extends Component {
+  render() {
+    return (
+        
+        <div>
+
+        <div className="twelve columns nopadding-nomargin">
+         <br />
+        </div>
+
+          <div className="content">
+
+            <div className="six columns h-80-vh">
+              <NavBlockHistory />
+            </div>
+
+            <div className="six columns h-80-vh">
+              <NavBlockAchievements />
+              <NavBlockUpdates />
+            </div>
+
+          </div>
+          
+      </div>
+    );
+  }
+}
+
+export default ScreenDashboard;
