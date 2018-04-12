@@ -11,7 +11,14 @@ class App extends Component {
   
   constructor(props) {
     super(props);
-    this.state = {first: true};
+    this.state = { 
+      screen: 0 
+    };
+    this.screens = {
+      0: <ScreenDashboard  />,
+      1: <ScreenCommunity  />
+    }
+
   }
 
   componentDidMount() {
@@ -22,23 +29,27 @@ class App extends Component {
     navigation.navigationInit();
 
   window.addEventListener("screenRender", function(e) {
-    component.setState({
-      first: false
-    });
 
-    console.log(component.state);
+    if (component.screens[e.detail]) {
+      component.setState({
+        screen: e.detail
+      });
+  
+      navigation.navigationInit();
+    }
+
+    else {
+      console.log("no existing screen")
+    }
+
+    // Init Navigation on Screen Update
   });
   
   }
 
   render() {
-    const first = this.state.first;
 
-      const navScreen = first ? (
-        <ScreenDashboard  />
-      ) : (
-        <ScreenCommunity />
-      );
+    const screen = this.screens[this.state.screen];
 
     return (
 
@@ -47,7 +58,7 @@ class App extends Component {
           <Header />
 
           <div className="eleven columns nopadding-nomargin">
-            {navScreen}
+            {screen}
           </div>
 
           <div className="one column nopadding-nomargin">

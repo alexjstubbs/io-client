@@ -106,15 +106,14 @@ let navigationEvent = {
 
      // Prev Nav Item ([) <-
      prevScreen: function() {
-         console.log("Previous Screen");
-     },
+        var event = new CustomEvent('screenRender', { detail: "0" });
+        window.dispatchEvent(event);
+    },
 
 
      // Prev Nav Item (]) ->
      nextScreen: function() {
-         console.log("Next Screen");
-
-         var event = new CustomEvent('screenRender', { detail: "YOYO" });
+         var event = new CustomEvent('screenRender', { detail: "1" });
          window.dispatchEvent(event);
      },
 
