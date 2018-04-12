@@ -119,18 +119,18 @@ hr {
   border-color: #404040; }
 
 /*
- * Console List
+ * Horizontal Nav List
  */
-ul.console-list {
+ul.nav-horizontal-list {
   position: relative;
   top: 25px; }
-  ul.console-list li {
+  ul.nav-horizontal-list li {
     font-size: 2em;
     display: inline;
     padding: 15px; }
-  ul.console-list li:not(.active) {
+  ul.nav-horizontal-list li:not(.active) {
     opacity: 0.5; }
-  ul.console-list li .active {
+  ul.nav-horizontal-list li .active {
     font-size: 2.5em;
     opacity: 1; }
 

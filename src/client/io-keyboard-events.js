@@ -12,7 +12,7 @@ let getNavigationItems = function() {
         navSelected        = document.getElementsByClassName("nav-selected")[0],
         navSelectedColumn  = navSelected.getAttribute("data-nav-column"),
         navSelectedRow     = navSelected.getAttribute("data-nav-row"),
-        navMap            = {
+        navMap             = {
             navItems:          navItems,
             navSelected:       navSelected,
             navSelectedColumn: navSelectedColumn,
@@ -111,10 +111,11 @@ let navigationEvent = {
     },
 
 
-     // Prev Nav Item (]) ->
+     // Next Nav Item (]) ->
      nextScreen: function() {
          var event = new CustomEvent('screenRender', { detail: "1" });
          window.dispatchEvent(event);
+
      },
 
     // Prev Nav Item (]) ->
@@ -176,10 +177,14 @@ let navigationEventListeners = {
 };
 
 let navigationInit = function() {
+    
+    // Remove selectedNav from screen
     let navSelection = _.first(document.getElementsByClassName("nav-selected"));
     if (navSelection) { navSelection.classList.remove("nav-selected"); }
-    
+
+    // Add Selection to first Item
     _.first(document.getElementsByClassName("nav-item")).classList.add("nav-selected");
+
 }
 
 /*  Exports

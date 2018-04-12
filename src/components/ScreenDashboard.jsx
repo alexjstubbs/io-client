@@ -7,6 +7,7 @@ import NavBlockUpdates from './NavBlockUpdates';
 
 class ScreenDashboard extends Component {
   render() {
+    
 
     return (
 

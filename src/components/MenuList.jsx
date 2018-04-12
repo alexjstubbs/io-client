@@ -4,8 +4,8 @@ const Components = {
   MenuList: function MenuList(props) {
     return (
      
-        <div className="console-list twelve columns">
-        <ul className="no-bullets nopadding-nomargin console-list">
+        <div className="nav-horizontal-list twelve columns">
+          <ul id="screen-list" className="no-bullets nopadding-nomargin nav-horizontal-list">
                 <li className="active">Dashboard</li>
                 <li>Community</li>
                 <li>Tools</li>

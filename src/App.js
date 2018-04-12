@@ -34,13 +34,18 @@ class App extends Component {
     window.addEventListener("screenRender", function(e) {
 
       if (component.screens[e.detail]) {
-        component.setState({
+		component.setState({
           screen: e.detail
         });
 
         // Init Navigation on Screen Update  
-        navigation.navigationInit();
-      }
+		navigation.navigationInit();
+		
+		// Change Horizontal Screen Nav Active Item    
+		document.querySelector("#screen-list li.active").classList.remove("active");
+		document.querySelector("#screen-list").getElementsByTagName("li")[component.state.screen].classList.add("active");
+	  }
+	  
     });
 
 }
@@ -48,7 +53,7 @@ class App extends Component {
   render() {
 
     const screen = this.screens[this.state.screen];
-	console.log(this.state.screen )
+	console.log("screen", this.state.screen )
     return (
 
       <div className="App container">
