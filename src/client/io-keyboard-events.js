@@ -106,14 +106,20 @@ let navigationEvent = {
 
      // Prev Nav Item ([) <-
      prevScreen: function() {
-        var event = new CustomEvent('screenRender', { detail: "0" });
+        let screenNumber = JSON.parse(localStorage.getItem("io-screen"));
+        screenNumber--;
+
+        var event = new CustomEvent('screenRender', { detail: screenNumber });
         window.dispatchEvent(event);
     },
 
 
      // Next Nav Item (]) ->
      nextScreen: function() {
-         var event = new CustomEvent('screenRender', { detail: "1" });
+         let screenNumber = JSON.parse(localStorage.getItem("io-screen"));
+         screenNumber++;
+
+         var event = new CustomEvent('screenRender', { detail: screenNumber });
          window.dispatchEvent(event);
 
      },
@@ -166,7 +172,7 @@ let navigationEventListeners = {
 
     passKeyEvent: function(e) {
 
-        console.log(e);
+        // console.log(e);
 
         if (e && keyMapping[e.keyCode]) {
             keyMapping[e.keyCode].event();

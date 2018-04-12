@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import ScreenDashboard from './components/ScreenDashboard';
 import ScreenCommunity from './components/ScreenCommunity';
+import ScreenTools from './components/ScreenTools';
 import ScreenNext from './components/ScreenNext';
 import ScreenPrev from './components/ScreenPrev';
 import navigation from './client/io-keyboard-events.js';
@@ -19,7 +20,8 @@ class App extends Component {
 
     this.screens = {
       0: <ScreenDashboard  />,
-      1: <ScreenCommunity  />
+	  1: <ScreenCommunity  />,
+      2: <ScreenTools  />
     }
 
   }
@@ -45,6 +47,10 @@ class App extends Component {
 		document.querySelector("#screen-list li.active").classList.remove("active");
 		document.querySelector("#screen-list").getElementsByTagName("li")[component.state.screen].classList.add("active");
 	  }
+
+	  else {
+		  console.log("No Screen Number:", e.detail)
+	  }
 	  
     });
 
@@ -52,10 +58,10 @@ class App extends Component {
 
   render() {
 
-    const screen = this.screens[this.state.screen];
-	console.log("screen", this.state.screen )
-    return (
+	const screen = this.screens[this.state.screen];
+	localStorage.setItem("io-screen", JSON.stringify(this.state.screen));
 
+    return (
       <div className="App container">
 
           <Header />

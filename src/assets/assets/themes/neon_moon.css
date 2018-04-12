@@ -65,6 +65,15 @@
 .h-60-vh {
   height: 60vh; }
 
+.h-70-vh {
+  height: 70vh; }
+
+.h-75-vh {
+  height: 75vh; }
+
+.h-80-vh {
+  height: 80vh; }
+
 .img-responsive {
   width: 100%;
   height: 100%; }
@@ -110,18 +119,18 @@ hr {
   border-color: #404040; }
 
 /*
- * Console List
+ * Horizontal Nav List
  */
-ul.console-list {
+ul.nav-horizontal-list {
   position: relative;
   top: 25px; }
-  ul.console-list li {
+  ul.nav-horizontal-list li {
     font-size: 2em;
     display: inline;
     padding: 15px; }
-  ul.console-list li:not(.active) {
+  ul.nav-horizontal-list li:not(.active) {
     opacity: 0.5; }
-  ul.console-list li .active {
+  ul.nav-horizontal-list li .active {
     font-size: 2.5em;
     opacity: 1; }
 
@@ -148,14 +157,25 @@ ul.console-list {
   background-position-y: 130%;
   background-position-x: 110%; }
 
+.navigation-button.shapes_02 {
+  background: #141414 url("../images/shapes_02.png") bottom right no-repeat;
+  background-position-y: 130%;
+  background-position-x: 110%; }
+
 .navigation-button:last-child {
   border-bottom: 8px solid #404040; }
 
 .right-screen {
   position: absolute;
-  right: -90px;
+  right: -145px;
   top: 120px;
-  opacity: 0.5; }
+  opacity: 0.7; }
+
+.left-screen {
+  position: absolute;
+  left: -190px;
+  top: 120px;
+  opacity: 0.7; }
 
 /*
  * Profile/Avatar/Indicators
